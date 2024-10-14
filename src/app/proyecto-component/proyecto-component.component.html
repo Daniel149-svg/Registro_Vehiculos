@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="col">
+    <h1>{{titulo}}</h1>
+  </div>
+  <br>
+  <form class="form-group row" (ngSubmit)="guardar_empleado()">
+    <div class="form-group col-md-3">
+      <label for="nombre">Marca del Vehículo:</label>
+      <input type="text" name="nombre" id="nombre" placeholder="Ingrese la marca del vehículo" class="form-control" [(ngModel)]="cuadroNombre">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="nombre">Modelo del Vehículo:</label>
+      <input type="text" name="apellidos" id="apellidos" placeholder="Ingrese el modelo del vehículo" class="form-control" [(ngModel)]="cuadroApellido">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="cargo">N° de motor:</label>
+      <input type="text" name="cargo" id="cargo" placeholder="Digite el número de motor" class="form-control" [(ngModel)]="cuadroCargo">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="color">Color del vehículo:</label>
+      <input type="text" name="color" id="color" placeholder="Ingrese el color del vehículo" class="form-control" [(ngModel)]="cuadroColor">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="trasmicion">Transmisión del vehículo:</label>
+      <input type="text" name="trasmicion" id="trasmicion" placeholder="Ingrese la transmisión" class="form-control" [(ngModel)]="cuadroTrasmicion">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="anio">Año del Vehículo:</label>
+      <input type="number" name="anio" id="anio" placeholder="Ingrese el año del vehículo" class="form-control" [(ngModel)]="cuadroAnio">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="salario">Valor del Vehículo:</label>
+      <input type="number" name="salario" id="salario" placeholder="Digite el valor del vehículo" class="form-control" [(ngModel)]="cuadroSalario">
+    </div>
+    <div class="form-group col-md-3 d-flex align-items-end">
+      <button type="submit" class="btn btn-primary w-100">Guardar Vehículo</button>
+    </div>
+  </form>
+</div>
+
+
+<div style="text-align: center;">
+    <button class="btn btn-primary" (click)="volverHome()">Volver a Home</button>
+</div>
