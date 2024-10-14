@@ -13,26 +13,15 @@ import { ServicioEmpleadoService } from '../servicio-empleado.service';
 })
 export class CaracteristicasEmpleadoCComponent {
 
-  
-
-
-
   @Output() newItemEvent = new EventEmitter<string>();
   @Output() caracteristicasEmpleados = new
   EventEmitter<string>();
 
   constructor(private miServicio: ServicioEmpleadoService){}
 
-
-
   agregar_caracteristicas(value: string){
     //this.miServicio.muestra_mensaje("carateristica agregada: "+value);
     this.caracteristicasEmpleados.emit(value);
-
-
   }
-  
-
-
 
 }
