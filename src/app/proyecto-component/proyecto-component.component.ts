@@ -22,7 +22,7 @@ class ProyectoComponentComponent implements OnInit{
   
 
   }
-  titulo = 'Listado de Vehiculos';
+  titulo = 'Agregar un nuevo Vehiculos';
 
   empleados:empleado[];
  

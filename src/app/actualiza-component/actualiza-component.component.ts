@@ -21,7 +21,7 @@ export
     
   
     }
-    titulo = 'Listado de vehiculos';
+    titulo = 'Actualizar Vehiculo';
   
     empleados:empleado[];
    

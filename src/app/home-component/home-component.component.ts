@@ -16,7 +16,7 @@ import { FormsModule } from '@angular/forms';
 })
 export class HomeComponentComponent {
 
-  titulo = 'Listado de Vehiculos';
+  titulo = 'Registro de Vehiculos';
 
   empleados:empleado[];
  
